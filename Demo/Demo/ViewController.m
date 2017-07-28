@@ -61,14 +61,14 @@
     return self.groups.count;
 }
 
-- (NSInteger)itemsTableView:(YQItemsTableView *)tableView limiteLineInsection:(NSInteger)section{
-    return section ? 0 : 2;
-}
+//- (NSInteger)itemsTableView:(YQItemsTableView *)tableView limiteLineInsection:(NSInteger)section{
+//    return section ? 0 : 2;
+//}
 - (CGFloat)itemsTableView:(YQItemsTableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 30.0;
 }
 - (CGFloat)itemsTableView:(YQItemsTableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 30.0;
+    return 0.0;
 }
 - (UIEdgeInsets)itemsTableView:(YQItemsTableView *)tableView insetsInSection:(NSInteger)section{
     return UIEdgeInsetsMake(10, 12, 10, 12);
